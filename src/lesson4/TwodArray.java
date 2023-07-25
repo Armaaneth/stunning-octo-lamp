@@ -13,6 +13,9 @@ public class TwodArray {
         * int []integer[];
      */
     public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5};
+        System.out.println(numbers.getClass().getName());
+
         int[][] intArray  = new int[3][3];
         intArray[0][0] = 1;
         intArray[0][1] = 2;
@@ -54,5 +57,40 @@ public class TwodArray {
             }
             System.out.println();//new line
         }
+
+        //declaration and initialization of array
+        int arr[]={4,4,5};
+        //getting the class name of Java array
+        Class c=arr.getClass();
+        String name=c.getName();
+        //printing the class name of Java array
+        System.out.println(name);
+
+        String tried[] = {"Nameless", "Piety", "Laptop", "Lecturer"};
+        Class d = tried.getClass();
+        String dTried = d.getName();
+        System.out.println(dTried);
+
+        //Creating an object array in java
+        // Create an object array to store different types of objects
+        Object[] objects = new Object[3];
+
+
+        // Add different types of objects to the array
+        objects[0] = "Hello";
+        objects[1] = 123;
+        objects[2] = true;
+
+        // Modify an object in the array
+        objects[1] = 456;
+
+        //  Print out the contents of the array after modification
+        for (Object obj : objects) {
+            System.out.println(obj);
+        }
+
+        Class objective = objects.getClass();
+        Object objectives = objective.getName();
+        System.out.println(objectives);
     }
 }
